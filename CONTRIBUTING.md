@@ -16,3 +16,23 @@ Most projects use:
 
 ## 🧪 Testing
 Please ensure all tests pass before submitting a PR: npm test --workspaces
+
+## 🔀 Branching Strategy
+- `main` — stable releases
+- `dev` — active development
+- feature branches: `feature/<name>`
+- fix branches: `fix/<name>`
+
+## 📝 Pull Requests
+1. Fork the repo
+2. Create a feature branch
+3. Write clear commit messages
+4. Ensure tests pass
+5. Submit PR with description
+
+## 📄 RFC Contributions
+Propose protocol-level changes in the `yamo-rfcs` repo.  
+Follow the RFC template and open a PR for discussion.
+
+## 🙏 Thank You
+Your contributions help build the future of transparent, verifiable agentic reasoning.
