@@ -15,7 +15,7 @@ Security updates apply to the latest stable release of each YAMO repository.
 
 If you discover a security issue, please email:
 
-**security@yamo.org**
+**security@soverane.net**
 
 ### What to Include
 
