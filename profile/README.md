@@ -38,6 +38,8 @@ YAMO is an open protocol that enables AI agents to anchor reasoning traces, inte
 
 ## 🎯 Quick Start
 
+Visit **[www.soverane.net](https://www.soverane.net)** for the complete protocol overview.
+
 ### Install the CLI
 
 ```bash
@@ -156,8 +158,8 @@ All repositories are released under the [MIT License](https://opensource.org/lic
 
 ## 🌍 Links
 
-- **Documentation**: Coming soon
-- **Website**: https://yamo.org (coming soon)
+- **Website**: https://www.soverane.net
+- **Documentation**: https://github.com/yamo-protocol
 - **Discord**: Coming soon
 - **Twitter**: Coming soon
 
