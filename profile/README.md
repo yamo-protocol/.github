@@ -27,11 +27,12 @@ YAMO is an open protocol that enables AI agents to anchor reasoning traces, inte
 
 ## ✨ Key Features
 
+- **🆓 Zero Cost**: Free blockchain anchoring on Ethereum Sepolia
 - **🔒 Immutable Storage**: Cryptographically anchored reasoning traces on EVM blockchains
 - **📦 IPFS Deep Bundling**: Store full content and artifacts with content-addressable CIDs
 - **🤝 Multi-Agent Workflows**: Native support for agent handoffs and consensus
-- **🔍 Full Auditability**: Verify any block's integrity via on-chain hash verification
-- **🛠 Developer-Friendly**: CLI, MCP server, and TypeScript SDKs
+- **🔍 Full Auditability**: Verify any block's integrity via on-chain hash verification or [Etherscan](https://sepolia.etherscan.io/address/0x3c9440fa8d604E732233ea17095e14be1a53b015)
+- **🛠 Developer-Friendly**: CLI, MCP server, and TypeScript SDKs with GitHub installation
 - **⚡ Upgradeable**: UUPS proxy pattern for contract evolution
 
 ---
@@ -40,29 +41,43 @@ YAMO is an open protocol that enables AI agents to anchor reasoning traces, inte
 
 Visit **[www.soverane.net](https://www.soverane.net)** for the complete protocol overview.
 
+### 🆓 Free & Live on Sepolia
+
+YAMO is deployed on **Ethereum Sepolia** - providing permanent, public blockchain anchoring at **zero cost**:
+
+- **Contract**: [`0x3c9440fa8d604E732233ea17095e14be1a53b015`](https://sepolia.etherscan.io/address/0x3c9440fa8d604E732233ea17095e14be1a53b015)
+- **Network**: Sepolia (Chain ID: 11155111)
+- **RPC**: `https://rpc.sepolia.org` (free)
+- **Cost**: $0 - Sepolia ETH is free from faucets
+
 ### Install the CLI
 
 ```bash
-npm install -g @yamo/cli
+# Clone the repository
+git clone https://github.com/yamo-protocol/yamo-cli.git
+cd yamo-cli
+
+# Install and build
+npm install && npm run build
+
+# Configure (defaults to Sepolia)
+cp .env.example .env
+
+# Use locally (no global install needed)
+npm start -- init MyAgent
+npm start -- hash myfile.yamo
+npm start -- submit myfile.yamo
+npm start -- audit block_001
 ```
 
-### Initialize a YAMO Block
+**Or install globally:**
 
 ```bash
+sudo npm link
 yamo init MyAgent
 ```
 
-### Submit to Blockchain
-
-```bash
-yamo submit my-block.yamo
-```
-
-### Verify Block Integrity
-
-```bash
-yamo audit block_001
-```
+**Coming soon:** `npm install -g @yamo/cli` (when published to npm)
 
 ---
 
@@ -89,11 +104,13 @@ yamo audit block_001
   └──────┬──────┘         └─────────────┘
          │
          ▼
-  ┌─────────────────────┐
-  │  YAMORegistryV2     │
-  │  Smart Contract     │
-  │  (EVM Blockchain)   │
-  └─────────────────────┘
+  ┌──────────────────────────────────────┐
+  │       YAMORegistryV2 (UUPS)          │
+  │  0x3c9440fa8d604E732233ea17095e14... │
+  │                                      │
+  │      Ethereum Sepolia (FREE)         │
+  │   https://rpc.sepolia.org            │
+  └──────────────────────────────────────┘
 ```
 
 ---
@@ -156,10 +173,38 @@ All repositories are released under the [MIT License](https://opensource.org/lic
 
 ---
 
+## 🌐 Network Deployment
+
+YAMO Protocol is live on **Ethereum Sepolia** as the production network:
+
+### Why Sepolia (Not Mainnet)?
+
+For AI reasoning provenance, Sepolia provides everything we need:
+
+✅ **Permanent** - Real blockchain, immutable records
+✅ **Public** - Verifiable on [Sepolia Etherscan](https://sepolia.etherscan.io)
+✅ **Free** - Zero gas costs for users (Sepolia ETH is free)
+✅ **Secure** - Same cryptographic guarantees as mainnet
+✅ **Production-Ready** - Stable since 2022, not going anywhere
+
+❌ **Don't Need** - Financial value, DeFi integration, or token functionality
+
+**Contract Details:**
+- **Address**: `0x3c9440fa8d604E732233ea17095e14be1a53b015`
+- **Explorer**: https://sepolia.etherscan.io/address/0x3c9440fa8d604E732233ea17095e14be1a53b015
+- **RPC**: https://rpc.sepolia.org
+- **Chain ID**: 11155111
+
+Get free Sepolia ETH: [sepoliafaucet.com](https://sepoliafaucet.com)
+
+---
+
 ## 🌍 Links
 
 - **Website**: https://www.soverane.net
+- **Contract**: https://sepolia.etherscan.io/address/0x3c9440fa8d604E732233ea17095e14be1a53b015
 - **Documentation**: https://github.com/yamo-protocol
+- **RFCs**: https://github.com/yamo-protocol/yamo-rfcs
 - **Discord**: Coming soon
 - **Twitter**: Coming soon
 
