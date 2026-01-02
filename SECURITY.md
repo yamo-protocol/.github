@@ -151,7 +151,7 @@ Coming soon. Watch this space for announcements.
 
 ## Contact
 
-- **Security Email**: security@yamo.org
+- **Security Email**: security@soverane.net
 - **PGP Key**: Coming soon
 
 ---
