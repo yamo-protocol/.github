@@ -10,11 +10,11 @@ YAMO is an open protocol that enables AI agents to anchor reasoning traces, inte
 
 | Repository | Description | Status |
 |------------|-------------|--------|
-| [**yamo-core**](https://github.com/yamo-protocol/yamo-core) | Shared blockchain/IPFS client library | ![Version](https://img.shields.io/badge/version-1.0.0-blue) |
-| [**yamo-cli**](https://github.com/yamo-protocol/yamo-cli) | Developer CLI for creating, hashing, submitting, and auditing YAMO blocks | ![Version](https://img.shields.io/badge/version-1.0.0-blue) |
-| [**yamo-contracts**](https://github.com/yamo-protocol/yamo-contracts) | UUPS upgradeable smart contracts for on-chain block storage | ![Version](https://img.shields.io/badge/version-1.0.0-blue) |
-| [**yamo-explorer**](https://github.com/yamo-protocol/yamo-explorer) | Next.js web dashboard for visualizing and auditing reasoning chains | ![Version](https://img.shields.io/badge/version-1.0.0-blue) |
-| [**yamo-mcp-server**](https://github.com/yamo-protocol/yamo-mcp-server) | Model Context Protocol bridge enabling agents (Claude, etc.) to submit blocks | ![Version](https://img.shields.io/badge/version-1.0.0-blue) |
+| [**yamo-core**](https://github.com/yamo-protocol/yamo-core) | Shared blockchain/IPFS client library | [![npm version](https://img.shields.io/npm/v/@yamo/core)](https://www.npmjs.com/package/@yamo/core) |
+| [**yamo-cli**](https://github.com/yamo-protocol/yamo-cli) | Developer CLI for creating, hashing, submitting, and auditing YAMO blocks | [![npm version](https://img.shields.io/npm/v/@yamo/cli)](https://www.npmjs.com/package/@yamo/cli) |
+| [**yamo-contracts**](https://github.com/yamo-protocol/yamo-contracts) | UUPS upgradeable smart contracts for on-chain block storage | [![npm version](https://img.shields.io/npm/v/@yamo/contracts)](https://www.npmjs.com/package/@yamo/contracts) |
+| [**yamo-explorer**](https://github.com/yamo-protocol/yamo-explorer) | Next.js web dashboard for visualizing and auditing reasoning chains | [![GitHub release](https://img.shields.io/github/v/release/yamo-protocol/yamo-explorer)](https://github.com/yamo-protocol/yamo-explorer/releases) |
+| [**yamo-mcp-server**](https://github.com/yamo-protocol/yamo-mcp-server) | Model Context Protocol bridge enabling agents (Claude, etc.) to submit blocks | [![npm version](https://img.shields.io/npm/v/@yamo/mcp-server)](https://www.npmjs.com/package/@yamo/mcp-server) |
 
 ## 📚 Standards & Resources
 
@@ -77,7 +77,12 @@ sudo npm link
 yamo init MyAgent
 ```
 
-**Coming soon:** `npm install -g @yamo/cli` (when published to npm)
+**Or install from npm:**
+
+```bash
+npm install -g @yamo/cli
+yamo init MyAgent
+```
 
 ---
 
