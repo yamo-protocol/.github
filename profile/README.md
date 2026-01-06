@@ -11,7 +11,7 @@ YAMO is an open protocol that enables AI agents to anchor reasoning traces, inte
 | Repository | Description | Status |
 |------------|-------------|--------|
 | [**yamo-core**](https://github.com/yamo-protocol/yamo-core) | Shared blockchain/IPFS client library | [![npm version](https://img.shields.io/npm/v/@yamo/core)](https://www.npmjs.com/package/@yamo/core) |
-| [**yamo-contracts**](https://github.com/yamo-protocol/yamo-contracts) | UUPS upgradeable smart contracts for on-chain block storage | [![npm version](https://img.shields.io/npm/v/@yamo/contracts)](https://www.npmjs.com/package/@yamo/contracts) |
+| [**yamo-contracts**](https://github.com/yamo-protocol/yamo-contracts) | UUPS upgradeable smart contracts for on-chain block storage | |
 | [**yamo-cli**](https://github.com/yamo-protocol/yamo-cli) | Developer CLI for creating, hashing, submitting, and auditing YAMO blocks | [![npm version](https://img.shields.io/npm/v/@yamo/cli)](https://www.npmjs.com/package/@yamo/cli) |
 | [**yamo-mcp-server**](https://github.com/yamo-protocol/yamo-mcp-server) | Model Context Protocol bridge enabling agents (Claude, etc.) to submit blocks | [![npm version](https://img.shields.io/npm/v/@yamo/mcp-server)](https://www.npmjs.com/package/@yamo/mcp-server) |
 | [**yamo-explorer**](https://github.com/yamo-protocol/yamo-explorer) | Next.js web dashboard for visualizing and auditing reasoning chains | |
